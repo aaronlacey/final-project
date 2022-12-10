@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+
+<body class="bg-dark text-light"></body>
+<div id="trifecta">
+    <div class="cashFlow">
+        <div class="budget__numbers">
+            <div id="earned" class="number">
+                <small> Money Earned </small>
+                <div class="amount__container">
+                    <p class="greenNum" id="earned__symbol">$</p>
+                    <span id="amount__earned"></span>
+                </div>
+            </div>
+            <div id="available" class="number">
+                <small>Money Available</small>
+                <div class="amount__container">
+                    <p class="amountLeft">$</p>
+                    <span id="amount__available"></span>
+                </div>
+            </div>
+            <div id="spent" class="number">
+                <small>Money Spent</small>
+                <div class="amount__container">
+                    <p class="redNum" id="spent__symbol">$</p>
+                    <span id="amount__spent"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="middleSection">
+    <div class="input__area">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+    </div>
+    <div class="buttons__area">
+        <button class="btn btn-success btn-lg" id="add_income">Add Income</button>
+        <button class="btn btn-danger btn-lg" id="add_expense">Add Expense</button>
+    </div>
+</div>
+<div class="items__container">
+    <div id="income__container" class="container">
+        <h2>INCOME💰</h2>
+        <ul class="incomeList">
+
+        </ul>
+    </div>
+    <div id="expenses__container" class="container">
+        <h2>EXPENSES💸</h2>
+        <ul class="expensesList">
+
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="bg-dark text-light">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
+
+</html>
